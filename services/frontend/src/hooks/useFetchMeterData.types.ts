@@ -19,8 +19,12 @@ export type meterData = {
 };
 
 export type ProcessedCustomerData = {
-  fullName: string;
-  address: string;
+  firstName: string;
+  lastName: string;
+  address: {
+    firstLine: string;
+    postCode: string;
+  };
   commsHub: {
     events: number;
     deviceTime: string;

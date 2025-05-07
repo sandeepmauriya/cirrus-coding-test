@@ -6,13 +6,13 @@ export function useFetchMeterData(guid: string | undefined) {
   const [data, setData] = useState<ProcessedCustomerData>();
 
   // Construct fetch url
-  const baseURL = import.meta.env.VITE_APP_METER_BASE_API_URL ?? "";
+  const baseURL =  "http://localhost:3000";
   const meterURL = `${baseURL}/meter/${guid}`;
 
   useEffect(() => {
     (async function () {
       const response = await axios.get(meterURL);
-      setData(response.data);
+      setData(response.data[0]);
     })();
   }, [meterURL]);
 

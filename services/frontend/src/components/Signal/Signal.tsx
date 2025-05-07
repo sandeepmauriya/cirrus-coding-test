@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Metadata, Subtitle, Title, Value } from "../../views/Meter";
+import { Metadata, Subtitle, Title, Value } from "../../Style/style";
+import { Bar, IconWrapper } from "./Signal.styles";
 import type { SignalProps } from "./Signal.types";
 
 /**
@@ -24,20 +24,3 @@ export function Signal({ value }: SignalProps) {
     </Metadata>
   );
 }
-
-// Wrapper for the icon
-const IconWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 40px;
-  margin: auto;
-  align-items: flex-end;
-  height: 60px;
-`;
-
-// Define each bar in the signal icon
-const Bar = styled.div`
-  width: 6px;
-  border-radius: 3px;
-  background-color: ${(props) => props.color};
-`;

@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import type { DeviceTimeProps } from "./DeviceTime.types";
-import { Metadata, Subtitle, Title } from "../../views/Meter";
+import { TimeWrapper } from "./DeviceTime.styles";
+import { Metadata, Subtitle, Title } from "../../Style/style";
 
 /**
  * Render the Device Time
@@ -19,15 +19,3 @@ export function DeviceTime({ time, subtitle }: DeviceTimeProps) {
     </Metadata>
   );
 }
-
-const TimeWrapper = styled.div`
-  background-color: #b9d93b;
-  width: fit-content;
-  align-self: center;
-  color: black;
-  font-family: montserrat;
-  font-size: 25px;
-  border-top: 5px solid #8cb62b;
-  margin-bottom: 20px;
-  padding: 5px;
-`;

@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import type { LogoBoxProps } from "./LogoBox.types";
-import { Metadata, Subtitle, Title } from "../../views/Meter";
+import { ImageWrapper } from "./LogoBox.styles";
+import { Metadata, Subtitle, Title } from "../../Style/style";
 
 /**
  * Render the widget to display the logo and the subtitle
@@ -26,9 +26,3 @@ export function LogoBox({ base64Image, subtitle }: LogoBoxProps) {
     </Metadata>
   );
 }
-
-const ImageWrapper = styled.div`
-  height: 60%;
-  align-content: end;
-  padding-bottom: 20px;
-`;

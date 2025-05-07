@@ -10,6 +10,7 @@
     "resolveJsonModule": true,
     "lib": ["es2015"],
     "noEmit": false,
-    "skipLibCheck": false
+    "skipLibCheck": false,
+    "typeRoots": ["node_modules/@types", "src/types"]
   }
 }

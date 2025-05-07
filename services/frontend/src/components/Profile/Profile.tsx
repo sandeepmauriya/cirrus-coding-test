@@ -1,6 +1,6 @@
 import type { ProfileCardProps } from "./Profile.types";
 import { Avatar, Button, Header, ProfileCard } from "./Profile.styles";
-import { SubValue, Value } from "../../Style/style";
+import { SubValue, Value } from "../../style/style";
 
 /**
  * Render the Profile Card

@@ -1,6 +1,6 @@
 import type { DeviceTimeProps } from "./DeviceTime.types";
 import { TimeWrapper } from "./DeviceTime.styles";
-import { Metadata, Subtitle, Title } from "../../Style/style";
+import { Metadata, Subtitle, Title } from "../../style/style";
 
 /**
  * Render the Device Time

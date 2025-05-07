@@ -1,6 +1,6 @@
 import type { LogoBoxProps } from "./LogoBox.types";
 import { ImageWrapper } from "./LogoBox.styles";
-import { Metadata, Subtitle, Title } from "../../Style/style";
+import { Metadata, Subtitle, Title } from "../../style/style";
 
 /**
  * Render the widget to display the logo and the subtitle

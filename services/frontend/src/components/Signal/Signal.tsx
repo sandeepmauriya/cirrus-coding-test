@@ -1,4 +1,4 @@
-import { Metadata, Subtitle, Title, Value } from "../../Style/style";
+import { Metadata, Subtitle, Title, Value } from "../../style/style";
 import { Bar, IconWrapper } from "./Signal.styles";
 import type { SignalProps } from "./Signal.types";
 

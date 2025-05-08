@@ -10,7 +10,6 @@ export function Meter() {
 
   // Fetch the customer data from custom data fetch hook
   const { data } = useFetchMeterData(id);
-  console.log('data ', data);
   // When data is fetched, display the customer data
   if (data) {
     // Format time to display HH:MM:SS
@@ -21,10 +20,10 @@ export function Meter() {
       <Wrapper>
         <InfoContainer>
           <Profile
-            fullName={data.firstName}
+            fullName={data.firstName + ' ' +  data.lastName}
             avatar={data.avatar}
             address={data.address.firstLine}
-            events={98988}
+            events={data.commsHub.events.length}
             hasSmartMeter={data.hasSmartMeter}
           />
           <FlexContainer>

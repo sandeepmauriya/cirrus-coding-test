@@ -26,7 +26,10 @@ export type ProcessedCustomerData = {
     postCode: string;
   };
   commsHub: {
-    events: number;
+    events: {
+      type: string;
+      timestamp: string;
+    }[];
     deviceTime: string;
     signal: number;
     ipv6: string;

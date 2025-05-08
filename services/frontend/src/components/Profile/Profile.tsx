@@ -1,5 +1,5 @@
 import type { ProfileCardProps } from "./Profile.types";
-import { Avatar, Button, Header, ProfileCard } from "./Profile.styles";
+import { Avatar, Button, Header, ProfileCard, Wrapper } from "./Profile.styles";
 import { SubValue, Value } from "../../style/style";
 
 /**
@@ -22,14 +22,14 @@ export function Profile({
   return (
     <ProfileCard>
       <Avatar src={avatar} alt="Profile" className="profile-image" />
-      <div>
+      <Wrapper>
         <Header>{fullName}</Header>
         <Value>{address}</Value>
         <SubValue>{events} events</SubValue>
         {hasSmartMeter ? (
           <Button className="smart-meter-button">Smart Meter</Button>
         ) : null}
-      </div>
+      </Wrapper>
     </ProfileCard>
   );
 }

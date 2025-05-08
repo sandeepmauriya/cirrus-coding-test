@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import type { ProcessedCustomerData } from "./useFetchMeterData.types";
+import type { ProcessedCustomerData } from "./useFetchMeter.types";
+import { base_url } from '../url'
 
 export function useFetchMeterData(guid: string | undefined) {
   const [data, setData] = useState<ProcessedCustomerData>();
 
   // Construct fetch url
-  const baseURL =  "http://localhost:3000";
-  const meterURL = `${baseURL}/meter/${guid}`;
+  const meterURL = `${base_url}/meter/${guid}`;
 
   useEffect(() => {
     (async function () {

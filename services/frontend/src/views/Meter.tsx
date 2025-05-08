@@ -1,6 +1,6 @@
 import { LogoBox, Profile, DeviceTime, TextCard, Signal } from "../components";
 import { useParams } from "react-router-dom";
-import { useFetchMeterData } from "../hooks/useFetchMeterData";
+import { useFetchMeterData } from "../hooks/useFetchMeter";
 import styled from "styled-components";
 import { removeHyphens } from "../utils/formatString";
 
